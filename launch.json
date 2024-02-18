@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--data_root=./datasets/data/orca", 
+                "--dataset=orca",
+                "--model=deeplabv3plus_mobilenet",
+                // "--enable_vis",
+                "--vis_port=8097",
+                "--vis_num_samples=4",
+                "--total_itrs=10000",
+                "--batch_size=4",
+                "--crop_size=720",
+                "--val_interval=100",
+                // "--save_val_results"
+            ]
+        }
+    ]
+}
